@@ -1,0 +1,116 @@
+{
+  "ships_train": 7035,
+  "ships_test": 1758,
+  "types": [
+    "Bulk carrier",
+    "Chemical tanker",
+    "Container ship",
+    "Gas carrier",
+    "General cargo ship",
+    "Oil tanker",
+    "Ro-ro ship",
+    "Vehicle carrier"
+  ],
+  "models": {
+    "physics": {
+      "mape_pct": 28.480733973202767,
+      "r2_log": 0.800118770787511
+    },
+    "gbm": {
+      "mape_pct": 25.952923541679578,
+      "r2_log": 0.8238665974700536
+    },
+    "qkernel": {
+      "mape_pct": 25.275592231521205,
+      "r2_log": 0.83439253873119
+    },
+    "qkernel_plus_physics": {
+      "mape_pct": 25.362340373934472,
+      "r2_log": 0.8337029211324906
+    },
+    "ensemble_gbm_qkernel": {
+      "mape_pct": 25.03823477603887,
+      "r2_log": 0.8353281336689532
+    }
+  },
+  "physics_speed_exponent": -0.5335875840572699,
+  "physics_eedi_exponent": 1.018222227980688,
+  "qkernel_gamma": 1.0,
+  "qkernel_lambda": 0.1,
+  "qkernel_train_subset": 7035,
+  "best_model": "ensemble_gbm_qkernel",
+  "per_type_best": {
+    "Bulk carrier": {
+      "mape_pct": 23.692673454953763,
+      "r2_log": 0.464767467806422,
+      "n": 624
+    },
+    "Chemical tanker": {
+      "mape_pct": 25.782716372197168,
+      "r2_log": 0.6469001513206303,
+      "n": 227
+    },
+    "Container ship": {
+      "mape_pct": 23.519879278308338,
+      "r2_log": 0.7838315904829686,
+      "n": 357
+    },
+    "Gas carrier": {
+      "mape_pct": 26.48065815348712,
+      "r2_log": 0.7834878065218271,
+      "n": 55
+    },
+    "General cargo ship": {
+      "mape_pct": 35.69719977645707,
+      "r2_log": 0.42178878945600695,
+      "n": 61
+    },
+    "Oil tanker": {
+      "mape_pct": 25.00254969451069,
+      "r2_log": 0.6669814774526999,
+      "n": 312
+    },
+    "Ro-ro ship": {
+      "mape_pct": 38.67846841719961,
+      "r2_log": 0.624611499123251,
+      "n": 38
+    },
+    "Vehicle carrier": {
+      "mape_pct": 24.752051097544726,
+      "r2_log": 0.3450198775647719,
+      "n": 84
+    }
+  },
+  "robustness": {
+    "physics": {
+      "mape_mean": 30.526708981668058,
+      "mape_sd": 1.2603906159879996,
+      "r2_mean": 0.7912949976218158
+    },
+    "gbm": {
+      "mape_mean": 27.169887843660586,
+      "mape_sd": 0.770024355204438,
+      "r2_mean": 0.8215194221816654
+    },
+    "qkernel": {
+      "mape_mean": 27.714832374938474,
+      "mape_sd": 1.5911991379648178,
+      "r2_mean": 0.8207572391880019
+    },
+    "qkernel_plus_physics": {
+      "mape_mean": 28.19158253813439,
+      "mape_sd": 1.7813198185611105,
+      "r2_mean": 0.8168980633213424
+    },
+    "ensemble_gbm_qkernel": {
+      "mape_mean": 26.72201747098673,
+      "mape_sd": 1.0491853095987922,
+      "r2_mean": 0.8279312512840195
+    },
+    "qkernel_beats_gbm_splits": 1,
+    "ensemble_beats_gbm_splits": 5,
+    "splits": 5,
+    "ships": 8793,
+    "eedi_exponent_mean": 1.020162177920622
+  }
+}

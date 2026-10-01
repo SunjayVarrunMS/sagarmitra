@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+bench_log.txt
+# EU-MRV data is published by EMSA; download it yourself (see README) rather than redistributing it here
+data/*.xlsx

@@ -1,0 +1,203 @@
+{
+  "linear": [
+    {
+      "case": "8 Indian coastal routes",
+      "routes": 8,
+      "exact_1kn": {
+        "obj": 2260.5701675929977,
+        "time_s": 0.031199200006085448,
+        "vars": 1448
+      },
+      "exact_025kn": {
+        "obj": 2230.087176982892,
+        "time_s": 0.19523199999821372,
+        "vars": 5352
+      },
+      "qi_textbook": {
+        "feasible_runs": 2,
+        "runs": 3,
+        "time_s": 0.12028750000172295,
+        "best": 2300.0733301231685,
+        "mean": 2324.282014200019,
+        "best_pct": 3.1382698336915085,
+        "mean_pct": 4.223818610739895
+      },
+      "qi_repair": {
+        "feasible_runs": 3,
+        "runs": 3,
+        "time_s": 0.294101133326573,
+        "best": 2242.0187135747865,
+        "mean": 2243.1690192529927,
+        "best_pct": 0.5350255682845976,
+        "mean_pct": 0.5866067660995854
+      }
+    },
+    {
+      "case": "60 routes (synthetic)",
+      "routes": 60,
+      "exact_1kn": {
+        "obj": 24099.561126639077,
+        "time_s": 0.12579000000550877,
+        "vars": 10860
+      },
+      "exact_025kn": {
+        "obj": 23171.4394922488,
+        "time_s": 0.6999523999984376,
+        "vars": 40140
+      },
+      "qi_textbook": {
+        "feasible_runs": 0,
+        "runs": 3,
+        "time_s": 5.313886733332765
+      },
+      "qi_repair": {
+        "feasible_runs": 0,
+        "runs": 3,
+        "time_s": 11.373087733334009
+      }
+    },
+    {
+      "case": "300 routes (synthetic)",
+      "routes": 300,
+      "exact_1kn": {
+        "obj": 112712.43042023481,
+        "time_s": 0.6225222999928519,
+        "vars": 54300
+      },
+      "exact_025kn": {
+        "obj": 109756.37322817466,
+        "time_s": 4.055329200011329,
+        "vars": 200700
+      },
+      "qi_textbook": {
+        "feasible_runs": 0,
+        "runs": 3,
+        "time_s": 51.8574221333353
+      },
+      "qi_repair": {
+        "feasible_runs": 0,
+        "runs": 3,
+        "time_s": 79.11540310000419
+      }
+    }
+  ],
+  "nonlinear": [
+    {
+      "case": "8 Indian coastal routes",
+      "routes": 8,
+      "exact_ignoring_queues": {
+        "obj": 3040.7670652105444,
+        "viol": 4.0,
+        "time_s": 0.03636319999350235,
+        "valid": false,
+        "pct_vs_classical": 33.65742566619502
+      },
+      "best_classical": {
+        "obj": 2275.045363214431,
+        "viol": 0.0,
+        "time_s": 0.2605177000077674,
+        "valid": true,
+        "rounds": 6,
+        "repaired": false,
+        "emis": 1943.0422820067001
+      },
+      "qi_alone": {
+        "feasible_runs": 3,
+        "runs": 3,
+        "time_s": 0.35003170000466827,
+        "best": 2270.691839908712,
+        "mean": 2327.077284534797,
+        "best_pct": -0.19135984609852139,
+        "mean_pct": 2.2870718167504918
+      },
+      "hybrid": {
+        "feasible_runs": 3,
+        "runs": 3,
+        "time_s": 0.3169321666646283,
+        "best": 2257.1623299066678,
+        "mean": 2257.4419704499337,
+        "best_pct": -0.7860517243707168,
+        "mean_pct": -0.7737600774529237,
+        "emis_best": 1875.4461273984084
+      }
+    },
+    {
+      "case": "60 routes (synthetic)",
+      "routes": 60,
+      "exact_ignoring_queues": {
+        "obj": 25254.676953150603,
+        "viol": 24.0,
+        "time_s": 0.2553109000000404,
+        "valid": false,
+        "pct_vs_classical": 17.50100066664858
+      },
+      "best_classical": {
+        "obj": 21493.15904534154,
+        "viol": 0.0,
+        "time_s": 1.6177672000194434,
+        "valid": true,
+        "rounds": 6,
+        "repaired": true,
+        "emis": 26881.60902728663
+      },
+      "qi_alone": {
+        "feasible_runs": 3,
+        "runs": 3,
+        "time_s": 3.2459215000029267,
+        "best": 21631.252218931873,
+        "mean": 21635.399248995545,
+        "best_pct": 0.6424982632800217,
+        "mean_pct": 0.6617929144521622
+      },
+      "hybrid": {
+        "feasible_runs": 3,
+        "runs": 3,
+        "time_s": 2.5480215333324545,
+        "best": 20930.470358772312,
+        "mean": 20933.005912879085,
+        "best_pct": -2.6179896839835957,
+        "mean_pct": -2.6061926554433796,
+        "emis_best": 24754.69963786227
+      }
+    },
+    {
+      "case": "300 routes (synthetic)",
+      "routes": 300,
+      "exact_ignoring_queues": {
+        "obj": 123450.4213465734,
+        "viol": 86.0,
+        "time_s": 1.8128564000071492,
+        "valid": false,
+        "pct_vs_classical": 15.603571099931953
+      },
+      "best_classical": {
+        "obj": 106787.72305386513,
+        "viol": 0.0,
+        "time_s": 11.247581300020101,
+        "valid": true,
+        "rounds": 6,
+        "repaired": true,
+        "emis": 126223.65068586863
+      },
+      "qi_alone": {
+        "feasible_runs": 3,
+        "runs": 3,
+        "time_s": 47.33992826666508,
+        "best": 112403.46656681749,
+        "mean": 112875.10284538903,
+        "best_pct": 5.258791322032118,
+        "mean_pct": 5.700449094184116
+      },
+      "hybrid": {
+        "feasible_runs": 3,
+        "runs": 3,
+        "time_s": 86.96896880000229,
+        "best": 103880.32822129368,
+        "mean": 103880.32822129368,
+        "best_pct": -2.7225927751122954,
+        "mean_pct": -2.7225927751122954,
+        "emis_best": 117010.2660064224
+      }
+    }
+  ]
+}
