@@ -182,7 +182,7 @@ risks = [
     ("A stronger classical method could close the gap", "We benchmark against the strongest classical pipeline we can build, and publish every number."),
     ("Public fuel data is annual, not per voyage", "Already trained on 8,793 real ships' annual reports. Voyage data from operators would sharpen it."),
     ("Fuel prices and green-fuel supply are uncertain", "Price and supply are inputs. The dashboard runs what-if scenarios."),
-    ("Judges need to trust the numbers", "Open benchmark with fixed seeds. One command re-runs every figure."),
+    ("Judges need to trust the numbers", "Public code on GitHub with fixed seeds. One command re-runs every figure."),
 ]
 text(s4, 5.0, 1.65, 7.8, 0.3, [[("Challenge", {"bold": True, "color": TEAL}), ("", {})]], size=12)
 text(s4, 8.25, 1.65, 4.5, 0.3, [[("How we handle it", {"bold": True, "color": TEAL}), ("", {})]], size=12)

@@ -233,26 +233,28 @@ cols = [
         "Han & Kim (2002). Quantum-inspired evolutionary algorithm for a class of combinatorial optimization. IEEE Trans. Evolutionary Computation.",
         "Sun, Feng & Xu (2004). Particle swarm optimization with particles having quantum behavior. IEEE CEC.",
         "Huangfu & Hall (2018). Parallelizing the dual revised simplex method. Mathematical Programming Computation (HiGHS).",
-        "Deb et al. (2002). A fast and elitist multiobjective genetic algorithm: NSGA-II. IEEE Trans. Evolutionary Computation.",
+        "Havlicek et al. (2019). Supervised learning with quantum-enhanced feature spaces. Nature.",
+        "Shaydulin & Wild (2022). Importance of kernel bandwidth in quantum machine learning. Physical Review A.",
         "Psaraftis & Kontovas (2013). Speed models for energy-efficient maritime transportation. Transportation Research Part C.",
     ]),
     ("Standards, policy and data", [
         "IMO MEPC.376(80), 2023: Guidelines on life cycle GHG intensity of marine fuels (LCA guidelines).",
         "IMO 2023 Strategy on reduction of GHG emissions from ships; CII rating (MARPOL Annex VI).",
         "Ministry of Ports, Shipping and Waterways: Maritime India Vision 2030; Harit Sagar Green Port Guidelines (2023).",
-        "EU-MRV / THETIS ship emissions data: mrv.emsa.europa.eu",
-        "Open AIS vessel tracks; Copernicus ERA5 weather reanalysis.",
+        "EU-MRV / THETIS 2023 ship emissions data (EMSA): mrv.emsa.europa.eu",
+        "Next data sources: open AIS vessel tracks; Copernicus ERA5 weather reanalysis.",
     ]),
 ]
 for i, (h, items) in enumerate(cols):
     x = 0.5 + i * 6.25
     box(s6, x, 1.65, 6.05, 3.85, fill=TINT)
     text(s6, x + 0.25, 1.82, 5.6, 0.4, [h], size=15, bold=True, color=TEAL)
-    text(s6, x + 0.25, 2.3, 5.6, 4.0, ["•  " + t for t in items], size=11.5, color=NAVY, space_after=10)
+    text(s6, x + 0.25, 2.3, 5.6, 4.0, ["•  " + t for t in items], size=11, color=NAVY, space_after=7)
 
 boxed_text(s6, 0.5, 5.72, 12.3, 0.62,
            [[("Our prototype: ", {"bold": True, "color": FOAM}),
-             ("fleet model, HiGHS exact solver, QIEA + QPSO and the benchmark script, in ps26138-sagarmitra (fleet.py, solvers.py, bench.py).", {})]],
+             ("github.com/SunjayVarrunMS/sagarmitra", {"bold": True, "color": WHITE}),
+             ("  fleet model, exact solver, QIEA + QPSO, fuel models and both benchmarks. Every number in this deck re-runs from there.", {})]],
            fill=NAVY, size=12.5, color=WHITE, anchor=MSO_ANCHOR.MIDDLE, pad=0.2)
 
 prs.save(OUT)
